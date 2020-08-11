@@ -1,5 +1,5 @@
-node {
+node('UBUNTU') {
     stage('scm'){
-        
+        git branch: 'master', url: '=https://github.com/dummyrepos-ad/game-of-life.git'
     }
 }
